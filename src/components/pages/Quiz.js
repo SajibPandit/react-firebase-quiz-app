@@ -45,9 +45,12 @@ function Quiz() {
 
   return (
     <>
-      <h1>Pick three of your favorite Star Wars Flims</h1>
+      <h1>{qna[currentQuestion].title}</h1>
       <h4>Question can have multiple answers</h4>
-      <Answers />
+      <Answers
+       options={qna[currentQuestion].options}
+       handleChange={handleAnswerChange}
+       />
       <ProgressBar />
       <MiniPalyer />
     </>
