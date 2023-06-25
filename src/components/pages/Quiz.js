@@ -49,7 +49,7 @@ function Quiz() {
       <h4>Question can have multiple answers</h4>
       <Answers
        options={qna[currentQuestion].options}
-       handleChange={handleAnswerChange}
+      //  handleChange={handleAnswerChange}
        />
       <ProgressBar />
       <MiniPalyer />
